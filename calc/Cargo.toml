@@ -1,0 +1,8 @@
+[package]
+name = "calc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arith_traits = "0.2.0"
+recursion = "0.3.3"
