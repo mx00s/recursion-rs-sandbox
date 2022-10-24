@@ -1,12 +1,5 @@
-use crate::class::BoxedClass;
+use crate::Error;
 
-#[derive(Clone, Debug)]
-pub enum Error<T, N> {
-    Terminal { expected: BoxedClass<T>, actual: T },
-    NonTerminal { unrecognized: N },
-    PrematureEndOfInput,
-    NotPredicateFail,
-}
 pub struct Parser<'a, T, N>(Box<dyn 'a + Fn(&'a [T]) -> Result<&'a [T], Error<T, N>>>);
 
 impl<'a, T, N: 'a> Parser<'a, T, N> {

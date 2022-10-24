@@ -5,10 +5,7 @@ use std::{
 
 use recursion::{expand_and_collapse, map_layer::MapLayer};
 
-use crate::{
-    parser::{Error, Parser},
-    traits::Bounded,
-};
+use crate::{Bounded, Error, Parser};
 
 #[derive(Clone, Debug)]
 #[allow(unused)]

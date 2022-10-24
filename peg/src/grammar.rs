@@ -2,11 +2,7 @@ use std::{collections::HashMap, fmt, iter::Step};
 
 use recursion::{expand_and_collapse, map_layer::MapLayer};
 
-use crate::{
-    class::{BoxedClass, Class},
-    parser::{Error, Parser},
-    traits::Bounded,
-};
+use crate::{Bounded, BoxedClass, Class, Error, Parser};
 
 #[derive(Clone, Debug)]
 #[allow(unused)]
