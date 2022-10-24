@@ -1,10 +1,4 @@
-#![feature(step_trait)]
-mod class;
-mod grammar;
-mod parser;
-mod traits;
-
-use crate::grammar::{BoxedExpr, Grammar};
+use peg::{BoxedExpr, Grammar};
 
 fn main() {
     let expr = BoxedExpr::sequence(
