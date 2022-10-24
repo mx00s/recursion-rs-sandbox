@@ -1,0 +1,7 @@
+[package]
+name = "peg"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+recursion = "0.3.3"
